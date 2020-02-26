@@ -1,10 +1,10 @@
-########PCA binomial test#########
+########PCA binary test#########
 # Does gender, a binomail value, effect PCA values?
 
 ########Calculating PCA without Gender#########
 #######Computing PCA using prcomp#########
 
-#Computing pca using prcomp (excluding binomial gender data)
+#Computing pca using prcomp (excluding binary gender data)
 #Exlcuding all non-numeric data
 pca.froggy<-prcomp(t(d.omit[,-c(1,3,4,7)]), scale=TRUE)
 pca.froggy
